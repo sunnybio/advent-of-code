@@ -1,4 +1,4 @@
-package day3
+package utils
 
 import (
 	"bufio"
@@ -17,15 +17,4 @@ func readFile(fileName string) bufio.Scanner {
 
 	fileScanner := bufio.NewScanner(f)
 	return *fileScanner
-}
-func solve() {
-	s := readFile("input.txt")
-	for s.Scan() {
-		fmt.Println(s.Text())
-		var line string = s.Text()
-
-		for i := 0; i < len(line); i++ {
-			fmt.Println(line[i])
-		}
-	}
 }
